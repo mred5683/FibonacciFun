@@ -1,72 +1,45 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static System.Console;
 
-namespace FibonacciFun
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            //declare variables to store sequence
-            var a = 0;
-            var b = 1;
-            var c = 0;
+namespace FibonacciFun {
 
-            //take input from user and store in variable
-            WriteLine("Enter a number");
-            var userInput = int.Parse(ReadLine());
+  class Program {
+    public static void Main() {
+      //declare variables to store sequence
+      double a = 0;
+      double b = 1;
+      double c = 0;
+      double goldenRatio;
+      var userInput = 0;
 
-            //output for start of sequence
-            WriteLine(a);
-            WriteLine(b);
+      //take input from user and store in variable
+      WriteLine("Enter a number between 0 and 2147483647");
+      try {
+        userInput = int.Parse(ReadLine());
+      }
+      catch (Exception) {
+        Write("\nSomething went wrong, please try again\n");
+        Main();
+      }
 
-            while (c <= userInput)
-            {
-                c = a + b;
-                if (c <= userInput)
-                {
-                    WriteLine(c);
-                }
-                else
-                {
-                    break;
-                }
-                a = b;
-                b = c;
-            }
 
-            a = 0;
-            b = 1;
-            c = 0;
+      //output for start of sequence
+      WriteLine(a);
+      WriteLine(b);
 
-            while (c <= userInput)
-            {
-                c = a + b;
+      while (c <= userInput) {
+        goldenRatio = b / a;
+        c = a + b;
+        if (c <= userInput) WriteLine(c + "=" + goldenRatio);
+        else break;
 
-                if (c == userInput)
-                {
-                    goto IsFib;
-                }
+        a = b;
+        b = c;
+      }
 
-                a = b;
-                b = c;
-            }
-            if (c != userInput)
-            {
-                goto IsNotFib;
-            }
+      
+      ReadKey(true);
 
-            IsFib:
-                WriteLine("True");
-                goto Finish;
-            IsNotFib:
-                WriteLine("False");
-            Finish:
-                WriteLine("Sequence Complete!!!");
-        }
     }
+  }
 }

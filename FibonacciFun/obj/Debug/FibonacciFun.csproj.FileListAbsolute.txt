@@ -4,3 +4,9 @@ C:\Programming\C# Programs\Personal\FibonacciFun\FibonacciFun\bin\Debug\Fibonacc
 C:\Programming\C# Programs\Personal\FibonacciFun\FibonacciFun\obj\Debug\FibonacciFun.csprojResolveAssemblyReference.cache
 C:\Programming\C# Programs\Personal\FibonacciFun\FibonacciFun\obj\Debug\FibonacciFun.exe
 C:\Programming\C# Programs\Personal\FibonacciFun\FibonacciFun\obj\Debug\FibonacciFun.pdb
+D:\Programming\Git_Stuff\FibonacciFun\FibonacciFun\bin\Debug\FibonacciFun.exe.config
+D:\Programming\Git_Stuff\FibonacciFun\FibonacciFun\bin\Debug\FibonacciFun.exe
+D:\Programming\Git_Stuff\FibonacciFun\FibonacciFun\bin\Debug\FibonacciFun.pdb
+D:\Programming\Git_Stuff\FibonacciFun\FibonacciFun\obj\Debug\FibonacciFun.csprojResolveAssemblyReference.cache
+D:\Programming\Git_Stuff\FibonacciFun\FibonacciFun\obj\Debug\FibonacciFun.exe
+D:\Programming\Git_Stuff\FibonacciFun\FibonacciFun\obj\Debug\FibonacciFun.pdb
